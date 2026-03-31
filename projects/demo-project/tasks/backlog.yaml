@@ -1,0 +1,12 @@
+- id: arch-001
+  role: architect
+  objective: 在需求稳定后产出第一版系统架构。
+  status: pending
+- id: build-001
+  role: frontend
+  objective: 定义面向操作者的工作流界面。
+  status: pending
+- id: build-002
+  role: backend
+  objective: 定义编排层与状态持久化层。
+  status: pending

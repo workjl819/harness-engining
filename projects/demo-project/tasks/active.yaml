@@ -1,0 +1,31 @@
+- id: req-001
+  role: analyst
+  executor_type: subagent
+  objective: 将当前设想整理成仓库第一版可收敛的 PRD。
+  inputs:
+    - projects/demo-project/project.yaml
+    - projects/demo-project/memory/brief.md
+    - projects/demo-project/memory/current-focus.md
+    - projects/demo-project/stages/01-requirements/summary.md
+  outputs:
+    - projects/demo-project/stages/01-requirements/artifacts/prd.md
+    - projects/demo-project/stages/01-requirements/artifacts/user-stories.md
+    - projects/demo-project/stages/01-requirements/artifacts/scope.md
+  done_criteria:
+    - 目标和非目标已明确
+    - 用户故事可测试
+    - 待解问题可见
+- id: req-002
+  role: orchestrator
+  executor_type: coordinator
+  objective: 让状态文件和阶段摘要与最新结论保持一致。
+  inputs:
+    - projects/demo-project/state.yaml
+    - projects/demo-project/stages/01-requirements/decisions.md
+    - projects/demo-project/stages/01-requirements/open-questions.md
+  outputs:
+    - projects/demo-project/state.yaml
+    - projects/demo-project/stages/01-requirements/summary.md
+  done_criteria:
+    - 状态为最新
+    - 阻塞项已明确

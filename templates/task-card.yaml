@@ -1,0 +1,12 @@
+- id: task-001
+  role: analyst
+  executor_type: subagent
+  objective: 将当前问题收敛为稳定产物。
+  inputs:
+    - projects/<project>/state.yaml
+    - projects/<project>/memory/current-focus.md
+  outputs:
+    - projects/<project>/stages/<stage>/artifacts/example.md
+  done_criteria:
+    - 输出文件已存在
+    - 待解问题已更新

@@ -1,0 +1,11 @@
+name: demo-project
+vision: 为软件交付构建一个低 token 消耗的 AI harness engineering 系统。
+primary_users:
+  - 项目负责人
+  - 基于角色的 AI agents
+success_metrics:
+  - 从需求到发布形成稳定流程
+  - 通过摘要和索引降低上下文消耗
+constraints:
+  - 优先使用 markdown 和 yaml 产物
+  - 保持阶段上下文精简

@@ -1,0 +1,29 @@
+roles:
+  orchestrator:
+    stages: [requirements, architecture, build, testing, release]
+    triggers: [阶段切换, 任务路由, 阻塞处理, 上下文压缩]
+    execution_mode: coordinator
+  analyst:
+    stages: [requirements]
+    triggers: [新需求, 范围澄清, 验收标准]
+    execution_mode: subagent
+  architect:
+    stages: [architecture]
+    triggers: [系统设计, 模块边界, api 合同, 数据建模]
+    execution_mode: subagent
+  frontend:
+    stages: [build]
+    triggers: [界面规划, 客户端实现, 交互行为]
+    execution_mode: subagent
+  backend:
+    stages: [build]
+    triggers: [服务设计, api 实现, 持久化]
+    execution_mode: subagent
+  tester:
+    stages: [testing]
+    triggers: [测试计划, 验证执行, 回归检查]
+    execution_mode: subagent
+  devops:
+    stages: [release]
+    triggers: [部署方案, 环境准备, 发布就绪]
+    execution_mode: subagent

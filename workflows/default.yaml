@@ -1,0 +1,48 @@
+stages:
+  - id: requirements
+    path: projects/<project>/stages/01-requirements
+    owner: analyst
+    executor_type: subagent
+    executor_role: analyst
+    required_outputs:
+      - artifacts/prd.md
+      - artifacts/user-stories.md
+      - artifacts/scope.md
+  - id: architecture
+    path: projects/<project>/stages/02-architecture
+    owner: architect
+    executor_type: subagent
+    executor_role: architect
+    required_outputs:
+      - artifacts/architecture.md
+      - artifacts/module-boundaries.md
+      - artifacts/api-contract.md
+      - artifacts/data-model.md
+  - id: build
+    path: projects/<project>/stages/03-build
+    owner: orchestrator
+    executor_type: subagent
+    executor_roles: [frontend, backend]
+    participants: [frontend, backend]
+    required_outputs:
+      - artifacts/frontend-plan.md
+      - artifacts/backend-plan.md
+      - artifacts/integration-plan.md
+  - id: testing
+    path: projects/<project>/stages/04-testing
+    owner: tester
+    executor_type: subagent
+    executor_role: tester
+    required_outputs:
+      - artifacts/test-plan.md
+      - artifacts/test-cases.md
+      - artifacts/test-report.md
+  - id: release
+    path: projects/<project>/stages/05-release
+    owner: devops
+    executor_type: subagent
+    executor_role: devops
+    required_outputs:
+      - artifacts/deploy-plan.md
+      - artifacts/runbook.md
+      - artifacts/release-checklist.md

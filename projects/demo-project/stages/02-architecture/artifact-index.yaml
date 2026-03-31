@@ -1,0 +1,13 @@
+artifacts:
+  - path: artifacts/architecture.md
+    purpose: 顶层系统设计
+    readers: [architect, frontend, backend, devops]
+  - path: artifacts/module-boundaries.md
+    purpose: 组件边界与责任映射
+    readers: [architect, frontend, backend]
+  - path: artifacts/api-contract.md
+    purpose: 接口与数据结构合同
+    readers: [architect, backend, frontend, tester]
+  - path: artifacts/data-model.md
+    purpose: 状态与持久化模型
+    readers: [architect, backend, tester]

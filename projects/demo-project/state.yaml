@@ -1,0 +1,22 @@
+project: demo-project
+current_stage: requirements
+current_focus: 定义第一版 harness 协议与仓库约定
+execution_model: stage_subagents
+current_stage_executor:
+  type: subagent
+  role: analyst
+stage_status:
+  requirements: in_progress
+  architecture: pending
+  build: pending
+  testing: pending
+  release: pending
+active_roles:
+  - orchestrator
+  - analyst
+active_subagents:
+  - analyst
+blockers:
+  - 当前暂无
+key_artifacts:
+  requirements_prd: projects/demo-project/stages/01-requirements/artifacts/prd.md

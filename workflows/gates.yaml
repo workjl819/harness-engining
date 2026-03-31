@@ -1,0 +1,20 @@
+gates:
+  requirements_to_architecture:
+    needs:
+      - stages/01-requirements/summary.md
+      - stages/01-requirements/artifacts/prd.md
+      - stages/01-requirements/open-questions.md
+  architecture_to_build:
+    needs:
+      - stages/02-architecture/summary.md
+      - stages/02-architecture/artifacts/architecture.md
+      - stages/02-architecture/artifacts/api-contract.md
+  build_to_testing:
+    needs:
+      - stages/03-build/summary.md
+      - stages/03-build/artifacts/frontend-plan.md
+      - stages/03-build/artifacts/backend-plan.md
+  testing_to_release:
+    needs:
+      - stages/04-testing/artifacts/test-report.md
+      - stages/04-testing/open-questions.md
