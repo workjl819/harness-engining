@@ -1,0 +1,5 @@
+discussions:
+  - id: arch-r001
+    file: discussions/2026-03-31-r001.md
+    summary: 确认小小日记采用纯前端方案，无需后端与远程 API
+    tags: [frontend-only, local-storage, demo]

@@ -1,0 +1,10 @@
+artifacts:
+  - path: artifacts/prd.md
+    purpose: 主要需求契约
+    readers: [analyst, architect, tester]
+  - path: artifacts/user-stories.md
+    purpose: 以用户为中心的场景与验收描述
+    readers: [analyst, architect, tester]
+  - path: artifacts/scope.md
+    purpose: 说明范围内与范围外边界
+    readers: [analyst, orchestrator, architect]

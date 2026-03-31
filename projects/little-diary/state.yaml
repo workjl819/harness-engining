@@ -1,0 +1,24 @@
+project: little-diary
+current_stage: release
+current_focus: 当前仓库仅保留 little-diary 的流程产物，业务源码已迁移到独立仓库
+execution_model: stage_subagents
+current_stage_executor:
+  type: subagent
+  role: devops
+stage_status:
+  requirements: completed
+  architecture: completed
+  build: completed
+  testing: completed
+  release: completed
+active_roles:
+  - orchestrator
+  - devops
+active_subagents:
+  - devops
+blockers:
+  - 待补充独立 GitHub 仓库地址
+key_artifacts:
+  requirements_prd: projects/little-diary/stages/01-requirements/artifacts/prd.md
+  reference_repo_local: /Users/jianglei/harness-engine-wp/little-diary
+  architecture_doc: projects/little-diary/stages/02-architecture/artifacts/architecture.md

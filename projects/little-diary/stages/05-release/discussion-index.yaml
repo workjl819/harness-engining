@@ -1,0 +1,5 @@
+discussions:
+  - id: release-r001
+    file: discussions/2026-03-31-r001.md
+    summary: 当前版本采用静态发布即可，无需服务端部署
+    tags: [release, static-hosting]

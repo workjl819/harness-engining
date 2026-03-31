@@ -1,0 +1,10 @@
+artifacts:
+  - path: artifacts/deploy-plan.md
+    purpose: 部署顺序与前置条件
+    readers: [devops, orchestrator]
+  - path: artifacts/runbook.md
+    purpose: 运维响应手册
+    readers: [devops]
+  - path: artifacts/release-checklist.md
+    purpose: 最终上线检查清单
+    readers: [devops, orchestrator]

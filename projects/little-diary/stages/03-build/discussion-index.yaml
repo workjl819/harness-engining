@@ -1,0 +1,5 @@
+discussions:
+  - id: build-r001
+    file: discussions/2026-03-31-r001.md
+    summary: 前端实现已确定为纯静态 H5，后端结论为当前不需要
+    tags: [build, frontend-only]

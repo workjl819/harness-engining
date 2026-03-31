@@ -1,0 +1,10 @@
+artifacts:
+  - path: artifacts/test-plan.md
+    purpose: 验证策略
+    readers: [tester, orchestrator]
+  - path: artifacts/test-cases.md
+    purpose: 可执行或手工测试场景
+    readers: [tester]
+  - path: artifacts/test-report.md
+    purpose: 发布就绪证据
+    readers: [tester, devops, orchestrator]

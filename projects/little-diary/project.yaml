@@ -1,0 +1,15 @@
+name: little-diary
+vision: 打造一个无需登录、支持本地保存的轻量手机端日记 demo。
+primary_users:
+  - 想快速记录日记的个人用户
+success_metrics:
+  - 用户可以在手机端 h5 页面新建和浏览本地日记
+  - 日记数据在刷新页面后仍保留在本地
+constraints:
+  - 首版不做登录与注册
+  - 优先降低实现复杂度
+  - 优先支持纯前端方案
+source_of_truth:
+  type: external_repo
+  local_path: /Users/jianglei/harness-engine-wp/little-diary
+  github_repo: pending

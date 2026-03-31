@@ -1,0 +1,26 @@
+- id: rel-001
+  role: devops
+  executor_type: subagent
+  objective: 完成静态发布收尾，并提醒补一轮真实手机浏览器验证。
+  inputs:
+    - apps/little-diary/index.html
+    - projects/little-diary/stages/04-testing/artifacts/test-report.md
+    - projects/little-diary/stages/05-release/artifacts/deploy-plan.md
+  outputs:
+    - projects/little-diary/stages/05-release/artifacts/release-checklist.md
+    - projects/little-diary/state.yaml
+  done_criteria:
+    - 发布方式已明确
+    - 剩余风险已记录
+- id: rel-002
+  role: orchestrator
+  executor_type: coordinator
+  objective: 收束本轮产物，确保阶段状态、任务状态和关键结论一致。
+  inputs:
+    - projects/little-diary/state.yaml
+    - projects/little-diary/stages/05-release/summary.md
+    - projects/little-diary/stages/05-release/artifacts/release-checklist.md
+  outputs:
+    - projects/little-diary/state.yaml
+  done_criteria:
+    - 项目状态与文档一致

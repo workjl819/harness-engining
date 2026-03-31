@@ -1,0 +1,10 @@
+artifacts:
+  - path: artifacts/frontend-plan.md
+    purpose: 客户端工作拆解
+    readers: [frontend, orchestrator]
+  - path: artifacts/backend-plan.md
+    purpose: 服务端工作拆解或无需后端的结论
+    readers: [backend, orchestrator]
+  - path: artifacts/integration-plan.md
+    purpose: 集成与依赖协调方案
+    readers: [frontend, backend, tester]

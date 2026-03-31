@@ -1,0 +1,24 @@
+- id: req-001
+  role: analyst
+  objective: 明确小小日记的需求范围、用户故事与是否需要后端。
+  status: completed
+- id: arch-001
+  role: architect
+  objective: 设计小小日记 demo 的最小技术方案。
+  status: completed
+- id: build-001
+  role: frontend
+  objective: 实现手机端 h5 日记 demo。
+  status: completed
+- id: build-002
+  role: backend
+  objective: 判断是否需要后端，并在需要时给出最小后端方案。
+  status: completed
+- id: test-001
+  role: tester
+  objective: 验证本地保存与基础交互是否符合需求。
+  status: completed
+- id: rel-001
+  role: devops
+  objective: 给出 demo 的最小发布方式。
+  status: completed
